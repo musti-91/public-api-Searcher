@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search API's</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- popups needs to download css styles from popups website-->
+</head>
+
+<body>
+  <div class="container">
+    <header class="notification is-success">
+      <button class="delete"></button>
+      <h1 class="title">Search for API's</h1>
+    </header>
+    <form action="" class="field">
+      <div class="select">
+        <select name="searchOptions" id="searchBy" class="select">
+          <option disabled>Choose here</option>
+          <option value="title" selected>Title</option>
+          <option value="category">Category</option>
+        </select>
+      </div>
+      <input type="text" id="search" class="input" placeholder="Search ...">
+      <button class="button is-primary">
+        <span class="icon">
+          <i class="fas fa-search"></i>
+        </span>
+      </button>
+    </form>
+    <div id="tableHolder">
+      <table class="table  is-striped is-narrow is-hoverable is-fullwidth">
+        <thead class="thead">
+          <tr>
+            <th>Pos</th>
+            <th>API's</th>
+            <th>Auth</th>
+            <th>Category</th>
+            <th>Cors</th>
+            <th>Description</th>
+            <th>HTTPS</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
